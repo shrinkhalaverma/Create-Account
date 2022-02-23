@@ -43,7 +43,7 @@ router.post("/login", (req, res) => {
             console.log(sql_insert_token)
             connection.query(sql_insert_token, (err, recordsArray, fields) => {
                 if(err){
-                    res.json({"status": "failed", "message": "AAAA credentials are not correct"})
+                    res.json({"status": "failed", "message": "credentials are not correct"})
                 }else{
                     res.json({"status": "success", "message": "logged in successfully", "token": token})
                 }

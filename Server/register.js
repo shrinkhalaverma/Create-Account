@@ -1,7 +1,6 @@
 $(document).ready(()=>{
     $("#register").click((event)=>{
         event.preventDefault();
-        console.log('AAAA')
         let first_name = document.getElementById("fname").value;
         let last_name = document.getElementById("lname").value;
         let email = document.getElementById("email").value;
